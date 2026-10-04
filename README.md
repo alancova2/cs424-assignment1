@@ -15,6 +15,12 @@ Is noise mostly explained by how many people are in a space, or do some spaces s
 
 How does the mix of people working alone compared to in groups change across spaces and time, and does it relate to how loud the space is?
 
+** Data collection plan**
+
+I plan to collect my data by visiting 5 study spaces and writing down what each one is like at that moment. One observation will be one visit of about 5 minutes to one space. At each visit I will record how full the space is, how loud it is, and whether people are mostly alone or in groups. I will estimate how many people are there and write a some notes about what I see and hear. For every visit I will note the building, the exact space, and the posted rule whether a quiet zone, collaborative zone, or no posted rule. The spaces I chose were based off my life as a student. Most of my classes are in the CS building, and I want to find good places there to study, so the places I will look at is the lounge, and the office hour area. I usually study in the library during my 1 hour break, the 2nd floor of the library is full and loud, so I go to the 4th floor, which I find to be full also but it's much quieter. I'm adding the Student Center lounge to see if there is a good place to study near the food area. I also want a mix of space types and posted rules so I can compare them.
+
+I will collect data on a few different days and  go whenever I have a break between classes. I don't have class on Fridays so I plan to collect in the morning that day. What I'm going to do every time is look around, rate the space, estimate the head count, and write some notes of what I see. I think I'll have a couple weak spots since it's a few days out of the week, and I will only visit during the day so I'll miss evenings and weekends. I picked spaces I already know so there could be better spots I am not aware of. My ratings and head counts will be my own estimates. Since my schedule decides when I go some spaces I visit could be at different times than others.
+
 | Attribute | Type | Description | Example |
 |---|---|---|---|
 | obs_id | Identifier | Unique number for each observation | 12 |
