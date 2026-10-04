@@ -14,3 +14,7 @@ Do spaces follow their posted policy? is a quiet zone actually quieter than a co
 Is noise mostly explained by how many people are in a space, or do some spaces stay quiet or loud no matter how crowded they are?
 
 How does the mix of people working alone compared to in groups change across spaces and time, and does it relate to how loud the space is?
+
+| Attribute | Type | Description | Example |
+|---|---|---|---|
+|obs_id | Identifier | Unique number for each observation | 12 |
