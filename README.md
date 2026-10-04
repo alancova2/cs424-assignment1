@@ -17,4 +17,22 @@ How does the mix of people working alone compared to in groups change across spa
 
 | Attribute | Type | Description | Example |
 |---|---|---|---|
-|obs_id | Identifier | Unique number for each observation | 12 |
+| obs_id | Identifier | Unique number for each observation | 12 |
+| building | Categorical | Building the space is in | Library |
+| location | Categorical | Space observed | Daley 2nd Floor |
+| space_type | Categorical | Kind of space: Library, Lounge, or Office Hour Area | Library |
+| posted_policy | Categorical | Rule posted in the space: Quiet Zone, Collaborative zone, or No posted rule | Quiet Zone |
+| date | Temporal | Date of observation (YYYY-MM-DD) | 2026-10-01 |
+| day_of_week | Ordinal | Day of the week | Thursday | 
+| time | Temporal | Start time of observation | 1:05PM |
+| occupancy_level | Ordinal | How full the space was, from 1 (mostly empty) to 5 (completely full) | 4 |
+| noise_level | Ordinal | How loud the space was, from 1 (silent apart from typing), to 5 (very loud) | 2 |
+| group_solo | Ordinal | Mix of people working alone or in groups, from 1 (everyone is solo) to 5 (mostly groups) | 3 |
+| head_count_min | Quantitative | Lowest estimate of people present | 150 |
+| head_count_max | Quantitative | Highest estimate of people present | 170 |
+| minutes_to_record | Quantitative | Minutes spent observing | 5 |
+| occupancy_notes | Text | My wording for the occupancy rating | Mostly full, couple of seats empty |
+| noise_note | Text | My wording for noise rating | Can hear people talking, not yelling | 
+| group_solo_notes | Text | My wording for solo/group rating | Most people are in groups |
+
+
