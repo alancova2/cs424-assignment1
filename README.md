@@ -41,4 +41,6 @@ I will collect data on a few different days and  go whenever I have a break betw
 | noise_note | Text | My wording for noise rating | Can hear people talking, not yelling | 
 | group_solo_notes | Text | My wording for solo/group rating | Most people are in groups |
 
+## Task 2: Pilot and data collection
+
 
