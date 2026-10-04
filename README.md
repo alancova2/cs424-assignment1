@@ -8,3 +8,9 @@ I want to observe how students use different study spaces on campus and how that
 **Initial domain questions**
 
 How does occupancy change across the day and the week in each space? Do some spaces fill up at predictable times while others stay quiet?
+
+Do spaces follow their posted policy? is a quiet zone actually quieter than a collaborative zone, and what about spaces with no rule?
+
+Is noise mostly explained by how many people are in a space, or do some spaces stay quiet or loud no matter how crowded they are?
+
+How does the mix of people working alone compared to in groups change across spaces and time, and does it relate to how loud the space is?
