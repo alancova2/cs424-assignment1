@@ -15,49 +15,49 @@ I ran it through CodeSpace and this is how I did it. Install pandas with pip ins
 ### Noise, groups, and space 
 My first chart of noise against the group/solo rating looked almost empty. That was misleading, because many visits had the same two numbers and their dots sat on top of each other.
 
-First noise vs. group mix chart, dots overlapping
+### First noise vs. group mix chart, dots overlapping
 After I added jitter every visit showed up and a clear pattern appeared. Visits with more groups were louder, and this was the strongest link in my data a rank correlation of about 0.81.
 
-Noise vs. group mix with jitter
+### Noise vs. group mix with jitter
 But groups don’t explain everything. At a group rating of 4, noise ranged from 2 to 5, and the loudest visits were all in the library’s collaborative zone. Splitting noise up by space makes this clearer. The Daley 4th Floor was a 1 on all six visits, and the Daley 2nd Floor was always 3 to 5. I still can’t say the posted rule is the reason because each rule belongs to one space.
 
-Noise level in every visit, by space
+### Noise level in every visit, by space
 One visit stood out as odd. On Thursday at 11:15, the CS Lounge was a 1 for noise with 15 to 20 people there while other visits with the same head count were a 2 or 3.
 
-Crowds over the day
+### Crowds over the day
 I plotted occupancy over the six rounds to look at Question 1. The library floors were fullest on Tuesday morning and midday, dropped on Tuesday afternoon, and went back up on Thursday. The CS Office Hours never got above a 2.
 
-Occupancy rating for each space across the six rounds
+### Occupancy rating for each space across the six rounds
 This chart is limited by how I collected the data. There are only six rounds, they aren’t evenly spaced, and day and time are mixed together. Friday morning was lower than Tuesday morning but I can’t tell if that’s because of Friday or just that one day.
 
-A problem with my ratings
+### A problem with my ratings
 I expected head count and my occupancy rating to say the same thing. They mostly agree since every visit with 150 or more people got a 4 or 5. But the rating isn’t the same across spaces. About 22 people in the CS Lounge got a 4 while 55 people on the 4th floor got a 2.
 
-Head count compared with my occupancy rating
+### Head count compared with my occupancy rating
 My rating is really how full a space felt for its size, and I never counted seats, I can’t compare big and small spaces fairly. My ratings also weren’t always consistent. The CS Lounge had 15 to 20 people on four visits and I rated it a 2 on some and a 3 on others.
 
-A good bet for a quiet seat
+### A good bet for a quiet seat
 For my new question I counted a visit as a good bet if noise was 2 or lower and occupancy was 3 or lower. CS Office Hours was a good bet on all six visits, the CS Lounge on three, the Daley 4th Floor and Student Center Lounge on two each and the Daley 2nd Floor on none.
 
-Number of good bet visits for each space
+### Number of good bet visits for each space
 The surprise was the quiet floor which only got 2 out of 6 because it was quiet every time but usually crowded. This result depends a lot on where I draw the line. If I allow occupancy up to 4 the 4th floor goes to 6 out of 6. The counts also hide how close each miss was since a visit that just missed the cutoff counts the same as a very loud, packed one.
 
 
 ## Task 4: Implement visualization alternatives
 
-# Direction 1: Occupancy over time
+## Direction 1: Occupancy over time
 
 Occupancy over time, one line per space. This line chart is for Question 1 how each space changes during the day. It uses the round, my occupancy rating, and the space. Each dot is one visit, how high it sits shows how full the space was, and each space has its own color and line. I tried it because I wanted changes over time to look like a shape, which is easier to compare than the colored boxes in my Sketch 1. It worked for the big changes like the library dropping on Tuesday afternoon and the CS Office Hours staying low. But I only have six rounds, they aren’t spaced evenly, and the lines connect Tuesday to Thursday like no time passed. When two spaces have the same number their lines cover each other. I’m going to change it by breaking the lines between days and adding head count so the size of the crowd shows up.
 
-# Direction 2: Noise by space
+## Direction 2: Noise by space
 
 Noise in every visit, one column per space. This dot plot is for Question 2 whether spaces follow their posted rules. It uses the space and the noise level. Each dot is one visit, and I moved them a little so they don’t hide each other. My Sketch 2 used averages, this time I wanted to see every visit and how much each space changes. It worked well. The quiet floor sits at 1 every time, the collaborative floor is 3 to 5, and the odd CS Lounge visit really stands out. But it only shows noise, it says nothing about crowds or time, and it can’t tell me if the rule or the space causes the difference. I’m keeping it because it answers Question 2 clearly and I’ll add each space’s posted rule under its name.
 
-# Direction 3: Noise vs group mix
+## Direction 3: Noise vs group mix
 
 Noise vs group mix, one dot per visit. This scatterplot is for Question 4 whether the mix of groups and solo people is connected to noise. It uses the group/solo rating, the noise level, and the space. Each dot is one visit, where it sits shows group mix and noise, and the color shows the space. After Assignment 1, I noticed none of my sketches showed single visits, so this one gives every visit its own dot. It shows a clear pattern more groups means more noise. Adding jitter also fixed my first version where dots were hiding behind each other. The problem is that most of the pattern comes from differences between spaces, not changes inside one space, and both ratings are just my own guesses. I’ll combine it with Question 3 by making each dot bigger when the head count is bigger.
 
-# Direction 4: Good bet for a quiet seat
+## Direction 4: Good bet for a quiet seat
 
 Number of good bet visits for each space. This bar chart is for my new question, which space is the best bet for a quiet seat. It uses the space, the noise level, and my occupancy rating, which I turn into a yes or no for “good bet.” A longer bar means more visits were a good bet. I wanted a direct answer to the question I ask myself, where should I go? It’s easy to read, and it shows the surprise that the quiet floor only got 2 out of 6. But the cutoff is fixed the bars don’t show how close a miss was and with only six visits per space, one visit changes a bar a lot. It also doesn’t show how a space changes from visit to visit which my question asks about. I’ll change it so people can pick their own noise and crowd limits.
 
