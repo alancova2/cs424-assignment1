@@ -12,7 +12,7 @@ I ran it through CodeSpace and this is how I did it. Install pandas with pip ins
 
 ## Task 3: Explore the data
 
-Noise, groups, and space 
+### Noise, groups, and space 
 My first chart of noise against the group/solo rating looked almost empty. That was misleading, because many visits had the same two numbers and their dots sat on top of each other.
 
 First noise vs. group mix chart, dots overlapping
