@@ -50,6 +50,35 @@ def make_24_hour(time_text):
     hour = int(hour)
     if hour < 8:
         hour = hour + 12
-    return f"{hour:02d}:{minute}
+    return f"{hour:02d}:{minute}"
 
 df["time"] = df["time"].apply(make_24_hour)
+
+df["head_count_mid"] = (df["head_count_min"] + df["head_count_max"]) / 2
+df["when"] = pd.to_datetime(df["date"].dt.strftime("%Y-%m-%d") + " " + df["time"])
+df = df.sort_values("when")
+gap_is_big = df["when"].diff() > pd.Timedelta(minutes=45)
+df["round"] = gap_is_big.cumsum() + 1
+
+round_start = df.groupby("round")["when"].transform("min")
+df["time_block"] = pd.cut(round_start.dt.hour, [0, 11, 14, 24], labels=["Morning", "Midday", "Afternoon"])
+df = df.sort_values("obs_id")
+
+if df[["location", "space_type", "posted_policy"]].isna().any().any():
+    raise ValueError("A label was not recognized")
+for col in ["occupancy_level", "noise_level", "group_solo"]:
+    if not df[col].between(1, 5).all():
+        raise ValueError(f"{col} has a value outside 1 to 5")
+if (df["head_count_min"] > df["head_count_max"]).any():
+    raise ValueError("A head count minimum is higher than its maximum")
+
+df["date"] = df["date"].dt.strftime("%Y-%m-%d")
+columns_to_keep = [
+    "obs_id", "building", "location", "space_type", "posted_policy",
+    "date", "day_of_week", "time", "round", "time_block",
+    "occupancy_level", "noise_level", "group_solo",
+    "head_count_min", "head_count_max", "head_count_mid", "minutes_to_record",
+    "occupancy_notes", "noise_notes", "group_solo_notes",
+]
+df[columns_to_keep].to_csv("processed_data/observations_clean.csv", index=False)
+print("Saved", len(df), "rows")
