@@ -18,7 +18,7 @@ My first chart of noise against the group/solo rating looked almost empty. That 
 ### First noise vs. group mix chart, dots overlapping
 After I added jitter every visit showed up and a clear pattern appeared. Visits with more groups were louder, and this was the strongest link in my data a rank correlation of about 0.81.
 
-### Noise vs. group mix with jitter
+### Noise vs group mix with jitter
 But groups don’t explain everything. At a group rating of 4, noise ranged from 2 to 5, and the loudest visits were all in the library’s collaborative zone. Splitting noise up by space makes this clearer. The Daley 4th Floor was a 1 on all six visits, and the Daley 2nd Floor was always 3 to 5. I still can’t say the posted rule is the reason because each rule belongs to one space.
 
 ### Noise level in every visit, by space
