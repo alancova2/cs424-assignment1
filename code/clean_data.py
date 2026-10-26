@@ -1,4 +1,5 @@
 import pandas as pd
+import os 
 
 df = pd.read_csv("observations.csv")
 
@@ -80,5 +81,6 @@ columns_to_keep = [
     "head_count_min", "head_count_max", "head_count_mid", "minutes_to_record",
     "occupancy_notes", "noise_notes", "group_solo_notes",
 ]
+os.makedirs("processed_data", exist_ok=True)
 df[columns_to_keep].to_csv("processed_data/observations_clean.csv", index=False)
 print("Saved", len(df), "rows")
