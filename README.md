@@ -13,3 +13,5 @@ I think the sliders will help most with questions that compare limits like which
 
 ![Static version, dot charts](figures/study_interactive.png)
 [study_static.py](code/study_static.py),  [study_interactive.py](code/study_interactive.py), [study_common.py](code/study_common.py) 
+
+# Task 2
