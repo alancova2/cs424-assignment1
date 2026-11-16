@@ -29,4 +29,4 @@ Everyone does both versions, I switch the order. I'm aiming for 12 people, 3 per
 
 ## Scoring
 
-An answer is right (1) or wrong (0), and if they change their mind the last answer counts. Time is the seconds from the end of the question to their final answer. The limit is 120 seconds. If they hit it, I mark it wrong, record 120, and set timed_out to 1.
+An answer is right (1) or wrong (0), and if they change their mind the last answer counts. Time is the seconds from the end of the question to their final answer. The limit is 120 seconds. If they hit it, I mark it wrong, record 120 seconds.
