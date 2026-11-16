@@ -1,3 +1,4 @@
+# Assignment 3
 # Task 1: Implementing interaction
 
 I picked my “good bet for a quiet seat” chart because the answer depends on where you draw the line. A visit counts as a good bet when its noise and crowd scores are under your limits. The quiet floor of the library had 2 good visits with a crowd limit of 3, but 6 with a limit of 4. Both versions use the same data and the same dot charts. There’s one small chart for each space, a dot for every visit, and bigger dots mean more people were there.
